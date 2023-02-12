@@ -37,7 +37,7 @@ class StoryMenuState extends MusicBeatState
 		['Tutorial'],
 		['jump-in', 'swing', 'split'],
 		['groovy brass', 'conscience', 'yap squad', 'intertwined'],
-		['copy-cat', 'jump-out', 'ronald mcdonald slide']
+		['copy-cat', 'jump-out', 'ronald mcdonald slide', 'crossover']
 	];
 	var curDifficulty:Int = 2;
 

@@ -1132,6 +1132,50 @@ class PlayState extends MusicBeatState
 
 							
 					}
+					case 'sunsuckpoop':
+					{
+						defaultCamZoom = 0.75;
+						curStage = 'sunsuckpoop';
+						if (FileSystem.exists(Paths.txt("crossover/preload" + suf)))
+							{
+								var characters:Array<String> = CoolUtil.preloadfile(Paths.txt("crossover/preload" + suf));
+								trace('Load Assets');
+								for (i in 0...characters.length)
+								{
+									var data:Array<String> = characters[i].split(' ');
+									dad = new Character (0, 0, data[0]);
+									trace ('found ' + data[0]);
+								}
+							}
+						grpDieStage = new FlxTypedGroup<FlxSprite>();
+						add(grpDieStage);
+
+						var bg1:FlxSprite = new FlxSprite(-1650, -2480).loadGraphic(Paths.image('sunset/hell/sky', 'shared'));
+						bg1.antialiasing = true;
+						bg1.scale.set(0.8, 0.8);
+						bg1.scrollFactor.set(0.3, 0.3);
+						bg1.active = false;
+						grpDieStage.add(bg1);
+
+						var bg2:FlxSprite = new FlxSprite(-1540, -1950).loadGraphic(Paths.image('sunset/hell/mainbgron', 'shared'));
+						bg2.antialiasing = true;
+						bg2.scale.set(0.5, 0.5);
+						bg2.scrollFactor.set(0.6, 0.6);
+						bg2.active = false;
+						grpDieStage.add(bg2);
+
+						var bg3:FlxSprite = new FlxSprite(-1490, -2040).loadGraphic(Paths.image('sunset/hell/pavement_yeah', 'shared'));
+						bg3.antialiasing = true;
+						bg3.scale.set(0.8, 0.8);
+						bg3.active = false;
+						grpDieStage.add(bg3);
+
+						blackscreentra = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+						blackscreentra.scale.set(1.6,1.6);
+						blackscreentra.cameras = [camHUD];
+						blackscreentra.visible = false;
+						add(blackscreentra);
+					}
 					case 'smp':
 						{
 								defaultCamZoom = 0.6;

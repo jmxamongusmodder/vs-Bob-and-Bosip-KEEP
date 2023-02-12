@@ -35,6 +35,10 @@ class HealthIcon extends FlxSprite
 			case 'npesta':
 				loadGraphic(Paths.image('icons/ronsip-ex'), true, 150, 150);
 				animation.add('ronsip-ex', [0, 1, 2], 0, false, isPlayer);
+
+		case 'free-roux':
+				loadGraphic(Paths.image('icons/ugl'), true, 150, 150);
+				animation.add('ronsip-ex', [0, 1], 0, false, isPlayer);
 			
 			case 'gloopy':
 				loadGraphic(Paths.image('icons/gloopy'), true, 150, 150);

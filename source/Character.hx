@@ -1044,6 +1044,21 @@ class Character extends FlxSprite
 					addOffset("singLEFT", -8, 0);
 					addOffset("singRIGHT", 0, 2);
 					addOffset("singDOWN", 0, -10);
+			case 'free-roux':
+				iconColor = "FFa500";
+				noteSkin = 'roux';
+					tex = Paths.getSparrowAtlas('characters/extra/free_robux', 'shared');
+					frames = tex;
+					animation.addByPrefix('idle', "idle", 24);
+					animation.addByPrefix('singUP', 'up pose', 24, false);
+					animation.addByPrefix('singDOWN', 'down pose', 24, false);
+					animation.addByPrefix('singLEFT', 'left pose', 24, false);
+					animation.addByPrefix('singRIGHT', 'right pose', 24, false);
+					addOffset('idle', 9, 57);
+					addOffset("singUP", -67, -90);
+					addOffset("singLEFT", 219, -57);
+					addOffset("singRIGHT", -55, -133);
+					addOffset("singDOWN", -18, -72);
 			case 'bob':
 				iconColor = "FFebdd44";
 				noteSkin = 'bob';

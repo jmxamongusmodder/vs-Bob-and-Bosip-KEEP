@@ -419,7 +419,7 @@ class TitleState extends MusicBeatState
 	function applyShit(v:Float)
 	{
 		scrollMultiplier = v;
-		trace(scrollMultiplier);
+	//	trace(scrollMultiplier);
 	}
 	function createCoolText(textArray:Array<String>)
 	{
@@ -531,7 +531,7 @@ class TitleState extends MusicBeatState
 						addMoreText('Night');
 					// credTextShit.text += '\nNight';
 					case 15:
-						addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+						addMoreText('Funkin VS Bob and bosip'); // credTextShit.text += '\nFunkin';
 					case 16:
 						skipIntro();
 				}

@@ -35,6 +35,7 @@ class D extends FlxObject
 	public static var cfD:String = 'desktop/folderDesktop';
 
 	public static var cfi:Int;
+	public static var bps:Bool = false;
 	
 	public function new()
 	{

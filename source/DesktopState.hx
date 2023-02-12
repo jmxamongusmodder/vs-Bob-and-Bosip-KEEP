@@ -909,6 +909,8 @@ class DesktopState extends MusicBeatState
 					light1.setPosition(398, 24);
 				case 4:
 					light1.setPosition(472, 24);
+				case 5:
+					light1.setPosition(523, 24);
 			}
 			light1.visible = false;
 		}
@@ -924,6 +926,9 @@ class DesktopState extends MusicBeatState
 			}
 			if (D.afU) {
 				sstuff.members[4].visible = true;
+			}
+			if (D.bps) {
+				sstuff.members[5].visible = true;
 			}
 		}
 	}
