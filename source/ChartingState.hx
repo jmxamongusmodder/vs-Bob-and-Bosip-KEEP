@@ -322,10 +322,12 @@ class ChartingState extends MusicBeatState
 		var gfVersions:Array<String> = CoolUtil.coolTextFile(Paths.txt('gfVersionList'));
 		var stages:Array<String> = CoolUtil.coolTextFile(Paths.txt('stageList'));
 		var noteStyles:Array<String> = CoolUtil.coolTextFile(Paths.txt('noteStyleList'));
+		//var charactersextra:Array<String> = CoolUtil.coolTextFile(Paths.txt('characterListmore'));
 
 		var player1DropDown = new FlxUIDropDownMenu(10, 100, FlxUIDropDownMenu.makeStrIdLabelArray(characters, true), function(character:String)
 		{
 			_song.player1 = characters[Std.parseInt(character)];
+			//_song.player1 = charactersextra[Std.parseInt(character)];
 		});
 		player1DropDown.selectedLabel = _song.player1;
 
@@ -334,6 +336,7 @@ class ChartingState extends MusicBeatState
 		var player2DropDown = new FlxUIDropDownMenu(140, 100, FlxUIDropDownMenu.makeStrIdLabelArray(characters, true), function(character:String)
 		{
 			_song.player2 = characters[Std.parseInt(character)];
+		//	_song.player2 = charactersextra[Std.parseInt(character)];
 		});
 		player2DropDown.selectedLabel = _song.player2;
 
