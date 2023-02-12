@@ -2061,7 +2061,7 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
-			case 'day' | 'sunset' | 'sunshit' | 'die' | 'dieinhell' | 'sunsuck':
+			case 'day' | 'sunset' | 'sunshit' | 'die' | 'dieinhell' | 'sunsuck' | 'sunsuckpoop':
 				dad.x -= 150;
 				dad.y -= 11;
 				boyfriend.x += 191;
@@ -3941,7 +3941,7 @@ class PlayState extends MusicBeatState
 				}
 				#end
 				switch (curStage) {
-					case 'day' | 'sunset' | 'night' | 'ITB' | 'die' | 'sunshit' | 'sans' | 'ITB-Glitch' | 'ITB-Party' | 'ITB-Hell' | 'ITB-Anime' | 'dieinhell' | 'sunsuck' | 'smp':
+					case 'day' | 'sunset' | 'night' | 'ITB' | 'die' | 'sunshit' | 'sans' | 'ITB-Glitch' | 'ITB-Party' | 'ITB-Hell' | 'ITB-Anime' | 'dieinhell' | 'sunsuck' | 'smp' | 'sunsuckpoop':
 						//nothing :D
 					default:
 						camFollow.setPosition(dad.getMidpoint().x + 150 + offsetX, dad.getMidpoint().y - 100 + offsetY);
@@ -3969,7 +3969,7 @@ class PlayState extends MusicBeatState
 				}
 				switch (curStage)
 				{
-					case 'die' | 'sunshit' | 'dieinhell' | 'sunsuck':
+					case 'die' | 'sunshit' | 'dieinhell' | 'sunsuck' | 'sunsuckpoop':
 						camFollow.x = FlxMath.lerp(536.63, camFollow.x, 0.1);
 						camFollow.y = FlxMath.lerp(449.94, camFollow.y, 0.1);
 					case 'day':
@@ -4043,7 +4043,7 @@ class PlayState extends MusicBeatState
 				}
 				#end
 				switch (curStage) {
-					case 'day' | 'sunset' | 'night' | 'ITB' | 'ITB-Glitch' | 'sunshit' | 'die' | 'sans' | 'ITB-Party' | 'ITB-Hell' | 'ITB-Anime' | 'dieinhell' | 'sunsuck' | 'smp':
+					case 'day' | 'sunset' | 'night' | 'ITB' | 'ITB-Glitch' | 'sunshit' | 'die' | 'sans' | 'ITB-Party' | 'ITB-Hell' | 'ITB-Anime' | 'dieinhell' | 'sunsuck' | 'smp' | 'sunsuckpoop':
 						//nothing :D
 					default:
 						camFollow.setPosition(boyfriend.getMidpoint().x - 100 + offsetX, boyfriend.getMidpoint().y - 100 + offsetY);
@@ -4071,7 +4071,7 @@ class PlayState extends MusicBeatState
 							camFollow.y = FlxMath.lerp(430.95, camFollow.y, 0.1);
 						else
 							camFollow.y = FlxMath.lerp(475.95, camFollow.y, 0.1);
-					case 'die' | 'sunshit' | 'dieinhell' | 'sunsuck':
+					case 'die' | 'sunshit' | 'dieinhell' | 'sunsuck' | 'sunsuckpoop':
 						camFollow.x = FlxMath.lerp(788.96, camFollow.x, 0.1);
 						if (SONG.player2 == 'boki')
 							camFollow.y = FlxMath.lerp(449.95, camFollow.y, 0.1);
